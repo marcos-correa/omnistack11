@@ -1,14 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
-
-import './styles.css';
-
 import logoImg from '../../assets/logo.svg';
+import './styles.css';
 
 export default function Register() {
     return (
-        <d className="register-container">
+        <div className="register-container">
             <div className="content">
                 <section>
                     <img src={logoImg} alt="Be The Hero" />
@@ -24,8 +22,8 @@ export default function Register() {
                 </section>
                 <form>
                     <input placeholder="Nome da ONG"/>
-                    <input type="email" placeholder="Email"/>
-                    <input type="Whatsapp" placeholder="WhatsApp"/>
+                    <input placeholder="Email"/>
+                    <input placeholder="WhatsApp"/>
 
 
                     <div className="input-group">
@@ -36,6 +34,6 @@ export default function Register() {
                     <button className="button" type="submit">Cadastrar</button>
                 </form>
             </div>
-        </d>
+        </div>
     )
 }

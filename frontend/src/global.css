@@ -30,14 +30,25 @@ form input {
     padding: 0 24px;
 }
 
-form input::placeholder {
+form input::placeholder,textarea::placeholder {
     color: #999999;
     transition: 0.2s;    
 }
-form input:focus::placeholder {
+form input:focus::placeholder, textarea:focus::placeholder {
     color: transparent;
     transition: 0.2s;    
 }
+
+form textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 140px;
+    color: #333;
+    border: 1px solid #dcdce6;
+    border-radius: 8px;
+    padding: 16px 24px;
+    line-height: 24px;
+  }
 
 .button {
     width: 100%;
